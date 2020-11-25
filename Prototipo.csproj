@@ -1,0 +1,317 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B6D76D88-765F-4226-A347-4FE09DBA2610}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Prototipo</RootNamespace>
+    <AssemblyName>Prototipo</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Clientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clientes.Designer.cs">
+      <DependentUpon>Clientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Conexion.cs" />
+    <Compile Include="DeclaracionF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeclaracionF.Designer.cs">
+      <DependentUpon>DeclaracionF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="El_Pana_MiguelDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>El_Pana_MiguelDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="El_Pana_MiguelDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>El_Pana_MiguelDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="El_Pana_MiguelDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>El_Pana_MiguelDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="El_Pana_MiguelDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>El_Pana_MiguelDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="El_Pana_MiguelDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>El_Pana_MiguelDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="El_Pana_MiguelDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>El_Pana_MiguelDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FirmaE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FirmaE.Designer.cs">
+      <DependentUpon>FirmaE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SeguroS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SeguroS.Designer.cs">
+      <DependentUpon>SeguroS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelloD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelloD.Designer.cs">
+      <DependentUpon>SelloD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DragControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\DropShadow.cs" />
+    <Compile Include="UI\TransparentPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <EmbeddedResource Include="Clientes.resx">
+      <DependentUpon>Clientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeclaracionF.resx">
+      <DependentUpon>DeclaracionF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FirmaE.resx">
+      <DependentUpon>FirmaE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="SeguroS.resx">
+      <DependentUpon>SeguroS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelloD.resx">
+      <DependentUpon>SelloD.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="El_Pana_MiguelDataSet.xsc">
+      <DependentUpon>El_Pana_MiguelDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="El_Pana_MiguelDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>El_Pana_MiguelDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="El_Pana_MiguelDataSet.xss">
+      <DependentUpon>El_Pana_MiguelDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="El_Pana_MiguelDataSet1.xsc">
+      <DependentUpon>El_Pana_MiguelDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="El_Pana_MiguelDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>El_Pana_MiguelDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="El_Pana_MiguelDataSet1.xss">
+      <DependentUpon>El_Pana_MiguelDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="El_Pana_MiguelDataSet2.xsc">
+      <DependentUpon>El_Pana_MiguelDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="El_Pana_MiguelDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>El_Pana_MiguelDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="El_Pana_MiguelDataSet2.xss">
+      <DependentUpon>El_Pana_MiguelDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="El_Pana_MiguelDataSet3.xsc">
+      <DependentUpon>El_Pana_MiguelDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="El_Pana_MiguelDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>El_Pana_MiguelDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="El_Pana_MiguelDataSet3.xss">
+      <DependentUpon>El_Pana_MiguelDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="El_Pana_MiguelDataSet4.xsc">
+      <DependentUpon>El_Pana_MiguelDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="El_Pana_MiguelDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>El_Pana_MiguelDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="El_Pana_MiguelDataSet4.xss">
+      <DependentUpon>El_Pana_MiguelDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="El_Pana_MiguelDataSet5.xsc">
+      <DependentUpon>El_Pana_MiguelDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="El_Pana_MiguelDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>El_Pana_MiguelDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="El_Pana_MiguelDataSet5.xss">
+      <DependentUpon>El_Pana_MiguelDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="UI\BUTTONS\BOTON_INICIO_SESION.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="UI\BUTTONS\BUTTON_SESION.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="UI\BUTTONS\boton_borrar_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="UI\BUTTONS\boton_borrar_idle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\boton_entrar_idle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="UI\BUTTONS\boton_entrar_idle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="UI\BOTON_INICIO_SESI.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="UI\LOGO.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="UI\login_screen_picture.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="UI\fondo_sesion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="UI\boton_entrar_idle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="UI\border_lef.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="UI\fondo_seleccion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="UI\botones.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="UI\boton_declaracion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="UI\boton_firma.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="UI\boton_segurosocial.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="UI\boton_cliente.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\usuarios.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\firma.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\sello.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\instituto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\ok.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\ok_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\no_hover.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
